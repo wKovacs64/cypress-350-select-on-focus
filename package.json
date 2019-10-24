@@ -1,0 +1,31 @@
+{
+  "name": "cypress-350-select-on-focus",
+  "version": "0.0.0",
+  "description": "Testing select-on-focus with Cypress 3.5.0",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,ts,tsx,html,json,md,yml,yaml}\"",
+    "lint": "eslint --ext \".js,.ts,.tsx\" .",
+    "test": "start-server-and-test develop 8000 cy:open",
+    "test:ci": "start-server-and-test develop 8000 cy:run"
+  },
+  "private": true,
+  "dependencies": {
+    "gatsby": "2.17.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
+  },
+  "devDependencies": {
+    "@wkovacs64/prettier-config": "1.0.2",
+    "cypress": "3.5.0",
+    "eslint": "6.5.1",
+    "eslint-plugin-cypress": "2.7.0",
+    "eslint-plugin-wkovacs64": "2.0.3",
+    "prettier": "1.18.2",
+    "start-server-and-test": "1.10.6"
+  }
+}
